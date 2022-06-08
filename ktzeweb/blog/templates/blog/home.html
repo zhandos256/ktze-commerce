@@ -1,12 +1,240 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>BLOG HOME PAGE</h1>
-</body>
-</html>
+{% extends 'base.html' %}
+
+{% block title %}
+KTZ Commerce 
+{% endblock title %}
+
+{% block content %}
+{% load static %}
+<!-- main page jumbotron -->
+<div class="jumbotron">
+  <div class="container">
+    <h1 class="display-3">Уполномоченный<br> экономический оператор</h1>
+    <p class="h4">Филиал акционерного общества «KTZ Express» - «KTZE Commerce» - это Уполномоченный экономический оператор, таможенный представитель и международный экспедитор, оказывающий полный спектр услуг в сфере внешнеэкономической деятельности по принципу «одного окна»</p>
+    <p><a class="btn btn-primary btn-lg" href="#" role="button">Связатся</a></p>
+  </div>
+</div>
+
+<div class="container-fluid px-4 py-5  p-0" id="featured-3">
+  <h2 class="pb-2 border-bottom text-center">Виды услуг филиала АО «KTZ EXPRESS»-«KTZE COMMERCE»</h2>
+  <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+    <div class="feature col text-center">
+      <div class="feature-icon d-inline-flex align-items-center justify-content-center bg-white text-dark fs-2 mb-3">
+        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-clipboard-check" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+          <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+          <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+        </svg>
+      </div>
+      <h3>Услуги таможенного представителя</h3>
+      <ul class="list-unstyled">
+        <li>Сопровождение таможенного оформления</li>
+        <li>Транзитное таможенного оформление</li>
+        <li>Посреднические услуги</li>
+      </ul> 
+      <a href="#" class="icon-link d-inline-flex align-items-center">
+        <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"></use></svg>
+      </a>
+    </div>
+    <div class="feature col text-center">
+      <div class="feature-icon d-inline-flex align-items-center justify-content-center bg-white text-dark fs-2 mb-3">
+        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-box" viewBox="0 0 16 16">
+          <path d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5 8 5.961 14.154 3.5 8.186 1.113zM15 4.239l-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923l6.5 2.6zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464L7.443.184z"/>
+        </svg>
+      </div>
+      <h3>Услуги склада уполномоченного экономического оператора</h3>
+      <ul class="list-unstyled">
+          <li>Терминальная обработка грузов</li>
+          <li>Хранение и консолидация грузов</li>
+          <li>Перегруз грузов/контейнеров</li>
+      </ul>
+      <a href="#" class="icon-link d-inline-flex align-items-center">
+        <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"></use></svg>
+      </a>
+    </div>
+    <div class="feature col text-center">
+      <div class="feature-icon d-inline-flex align-items-center justify-content-center bg-white text-dark fs-2 mb-3">
+        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-check-square" viewBox="0 0 16 16">
+          <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+          <path d="M10.97 4.97a.75.75 0 0 1 1.071 1.05l-3.992 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.235.235 0 0 1 .02-.022z"/>
+        </svg>
+      </div>
+      <h3>Услуги на МЦПС Хоргос</h3>
+      <ul class="list-unstyled">
+        <li>Перевалка товаров с использованием специализированного крана</li>
+        <li>Транзитное таможенного оформление</li>
+        <li>Посреднические услуги</li>
+      </ul>
+      <a href="#" class="icon-link d-inline-flex align-items-center">
+        
+        <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"></use></svg>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- Спектр услуг-->
+
+<div class="container px-4" id="icon-grid">
+  <h2 class="pb-2 border-bottom text-center">Схема работы по окозанию улсуг уполномоченного экономического оператора</h2>
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
+    <div class="col d-flex align-items-start">
+      <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#bootstrap"></use></svg>
+      <div>
+        <p>Заключение  договора  комиссии
+        </p>
+      </div>
+    </div>
+    <div class="col d-flex align-items-start">
+      <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+        <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+      </svg></svg>
+      <div>
+        <p>Заключение  договора  поставки
+        </p>
+      </div>
+    </div>
+    <div class="col d-flex align-items-start">
+      <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+        <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+      </svg></svg>
+      <div>
+        <p>Получение  информации  о товаре
+        </p>
+      </div>
+    </div>
+    <div class="col d-flex align-items-start">
+      <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+        <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+      </svg></svg>
+      <div>
+        <p>Расчет таможенных  платежей  и  налогов
+        </p>
+      </div>
+    </div>
+    <div class="col d-flex align-items-start">
+      <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"></svg>
+      <div>
+        <p>Оплата за  услуги и товары</p>
+      </div>
+    </div>
+    <div class="col d-flex align-items-start">
+      <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+        <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+      </svg></svg>
+      <div>
+        <p>Отправка  товара</p>
+      </div>
+    </div>
+    <div class="col d-flex align-items-start">
+      <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+        <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+      </svg></svg>
+      <div>
+        <p>Декларирование  товара</p>
+      </div>
+    </div>
+    <div class="col d-flex align-items-start">
+      <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+        <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+      </svg></svg>
+      <div>
+        <p>Передача товара  заказчику</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Posts -->
+<div class="container mt-5">
+  <h2 class="pb-2 border-bottom text-center pb-5">Наши агентские пункты</h2>
+  <div class="row featurette">
+    <div class="col-md-7">
+      <h2 class="featurette-heading fw-normal lh-1">Агентский пунтк - Алтынколь</h2>
+      <p class="lead">Станция является одним из стратегических объектов, технологически связанных с проектом создания Специальной экономической зоны «Хоргос — Восточные ворота». Станция выполняет такие операции как:
+        - прием и отправление, формирование – расформирование поездов;
+        - прием-отправление пассажирских поездов и обслуживание пассажиров;
+        - операции по приему и сдаче грузов в КНР;
+        - техническое обслуживание и коммерческий осмотр вагонов;
+        - смена локомотивов и локомотивных бригад;
+        - оформление перевозочных документов;
+        - производство маневровой работы по подаче вагонов на погрузочноразгрузочные фронты и уборка их;
+        - обслуживание путей структурных подразделений .
+        Перегруза контейнеров с вагонов КНР в вагоны Казахстана и наоборот, выполняется с Сухим портом «Хоргос».
+        </p>
+    </div>
+    <div class="col-md-5">
+      <img src="{% static 'img/altynkol.jpg' %}" alt="" width=500 height=500 class="img-fluid mx-auto">
+    </div>
+  </div>
+  <hr class="featurette-divider">
+
+  <div class="row featurette">
+    <div class="col-md-7 order-md-2">
+      <h2 class="featurette-heading fw-normal lh-1">Агентский пунтк - Достык</h2>
+      <p class="lead">Станция Достык является внеклассной станцией с последовательным
+        расположением парков. Расположена на 303-310 км участка Актогай –
+        Госграница. По характеру работы относится к грузовой пограничной станции, с
+        выполнением функций грузовой и сортировочной станции. Станция открыта
+        согласно тарифному руководству №4: для грузовых операций по параграфам –
+        1, 3, 4, 8, 8Н, 10, 10Н, для пассажирских операции по параграфу – П
+        Границами станции являются:
+        - со стороны Разъезда 19 км – входной светофор «Н»;
+        - со стороны станции Алашанькоу – по колее 1435 мм входной светофор «ЧК»,
+        по колее 1520 мм входной светофор «ЧС»</p>
+    </div>
+    <div class="col-md-5 order-md-1">
+      <img src="{% static 'img/dostyk.jpg' %}" alt="" width=500 height=500 class="img-fluid mx-auto">
+    </div>
+  </div>
+
+  <hr class="featurette-divider">
+
+  <div class="row featurette">
+    <div class="col-md-7">
+      <h2 class="featurette-heading fw-normal lh-1">Агентский пунтк - Сухой порт</h2>
+      <p class="lead">Сухой порт «KTZE-Khorgos Gateway» является крупнейшим в Центральной Азии. Он расположен на территории специальной экономической зоны «Хоргос – Восточные ворота» на границе Казахстана и Китая. На сегодня играет важнейшую роль транспортно-логистического центра страны.</p>
+    </div>
+    <div class="col-md-5">
+      <img src="{% static 'img/port.jpg' %}" alt="" width=500 height=500 class="img-fluid mx-auto">
+    </div>
+  </div>
+
+  <hr class="featurette-divider">
+
+  <div class="row featurette">
+    <div class="col-md-7 order-md-2">
+      <h2 class="featurette-heading fw-normal lh-1">Агентский пунтк - Хоргос</h2>
+      <p class="lead">Международный центр приграничного сотрудничества «Хоргос» это комплекс торгового, экономического, инвестиционного сотрудничества, а также развития туризма, состоящий из казахстанской и китайской частей, расположенных на приграничных сопредельных территориях двух государств. Проект Реализуется в рамках новой экономической политики «НҰРЛЫ ЖОЛ» и стратегии «Один пояс — один путь».</p>
+    </div>
+    <div class="col-md-5 order-md-1">
+      <img src="{% static 'img/khorgos.jpg' %}" alt="" width=500 height=500 class="img-fluid mx-auto">
+    </div>
+  </div>
+
+  <hr class="featurette-divider">
+
+  <div class="row featurette">
+    <div class="col-md-7">
+      <h2 class="featurette-heading fw-normal lh-1">Агентский пунтк - Нурлы жол</h2>
+      <p class="lead">Структура генеральной планировки комплекса предусматривает перемещение 2,5 тысяч транспортных средств и 15 тысяч физических лиц в рабочий день в обе стороны движения, в том числе грузовых транспортных средств – 2 200 ед., пассажирских транспортных средств (автобусы и легковые авто) – 300 единиц. Территория пункта пропуска разделена на две самостоятельные зоны</p>
+    </div>
+    <div class="col-md-5">
+      <img src="{% static 'img/nurjol.jpg' %}" alt="" width=500 height=500 class="img-fluid mx-auto">
+    </div>
+  </div>
+
+  <hr class="featurette-divider">
+
+  <div class="row featurette">
+    <div class="col-md-7 order-md-2">
+      <h2 class="featurette-heading fw-normal lh-1">Агентский пункт - Актау порт</h2>
+      <p class="lead">Морской порт Актау (Казахстан) расположен на восточном побережье Каспийского моря в точке пересечения нескольких международных транспортных коридоров, что позволяет обеспечивать перевозку сухих грузов, сырой нефти и нефтепродуктов с востока на запад, с севера на юг и обратно в направлении Ирана, Турции, России, Азербайджана, Туркменистана 12 месяцев в году и 24 часа в сутки.</p>
+    </div>
+    <div class="col-md-5 order-md-1">
+      <img src="{% static 'img/aktauport.jpeg' %}" alt="" width=500 height=500 class="img-fluid mx-auto">
+    </div>
+  </div>
+</div>
+{% endblock content %}
